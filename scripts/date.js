@@ -4,4 +4,4 @@ const today = new Date();
 
 currentyear.innerHTML = `<span class"currentyear">${today.getFullYear()}</span>`;
 
-document.getElementById("lastModified").innerHTML = document.lastModified;
+document.getElementById("lastModified").innerHTML = `Last Modification: ${document.lastModified}`;
