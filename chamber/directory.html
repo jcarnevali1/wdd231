@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jean Franco Carnevali - WDD 231 | Web Frontend Development I | BYU - Home Page">
+    <meta name="author" content="Jean Franco Carnevali">
+    <title>WDD 231 - Home Page | Jean Franco Carnevali</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <link rel="icon" href="../favicon.ico">
+
+    <meta property="og:title" content="WDD 231 Home Page">
+    <meta property="og:description" content="BYU Web Frontend Development I Course Website">
+    <meta property="og:image" content="https://jcarnevali1.github.io/wdd231/images/profile.jpg">
+    <meta property="og:url" content="https://jcarnevali1.github.io/wdd231">
+</head>
+<body>
+    <header>
+        <img src="../images/house.svg" alt="Home Icon">
+        <span>Jean's Site</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#" aria-current="page">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Directory</h1>
+        <div class="filters">
+            <button class="active" type="button" id="grid">Grid</button>
+            <button type="button" id="list">List</button>
+        </div>
+        <section class="grid" id="business-cards"></section>
+    </main>
+    <footer>
+        <div class="website-info">
+            <p>Bogotá Colombia Chamber of Commerce</p>
+            <p>Carrera quien sabe donde</p>
+            <p>Bogotá, Puente Aranda 999</p>
+            <p>info@bogotacocc.com</p>
+            <p>(123) 456-7890</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/jcarnevali1/wdd231" target="_blank"><img src="../images/github.svg" alt="GitHub Logo" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="../images/linkedin.svg" alt="LinkedIn Logo" width="16" height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.svg" alt="Instagram Logo" width="16" height="16"></a>
+            <a href="https://x.com/home" target="_blank"><img src="../images/twitter-x.svg" alt="Twitter Logo" width="16" height="16"></a>
+        </div>
+        <div class="student-info">
+            <p>WDD 231 Class Project</p>
+            <p>Jean Franco Carnevali</p>
+            <p>© <span id="currentyear"></span> Bogotá Colombia Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

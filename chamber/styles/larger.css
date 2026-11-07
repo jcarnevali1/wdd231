@@ -1,0 +1,64 @@
+@media only screen and (min-width: 38rem) {
+
+    main {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .list {
+        .business-info h2 {
+            margin-bottom: 0;
+        }
+
+        .business-card {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
+        }
+
+        .card-details {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 15px;
+        }
+    }
+
+
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .website-info p {
+        text-align: end;
+    }
+
+    .student-info p {
+        text-align: start;
+    }
+
+}

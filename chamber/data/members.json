@@ -1,0 +1,93 @@
+
+[
+  {
+    "name": "Bogota Coffee",
+    "tagline": "Fresh Coffee Every Day",
+    "address": "Calle 85 #12-50, Bogotá",
+    "phone": "601-555-1001",
+    "email": "info@bogotacoffee.com",
+    "website": "https://example.com",
+    "image": "../../images/linkedin.svg",
+    "membership": 3
+  },
+  {
+    "name": "Tech Solutions",
+    "tagline": "Technology for Everyone",
+    "address": "Carrera 15 #93-40, Bogotá",
+    "phone": "601-555-1002",
+    "email": "info@techsolutions.com",
+    "website": "https://example.com",
+    "image": "../../images/twitter-x.svg",
+    "membership": 2
+  },
+  {
+    "name": "Green Garden",
+    "tagline": "Plants for Better Living",
+    "address": "Calle 100 #19-20, Bogotá",
+    "phone": "601-555-1003",
+    "email": "info@greengarden.com",
+    "website": "https://example.com",
+    "image": "../../images/instagram.svg",
+    "membership": 1
+  },
+  {
+    "name": "Urban Fitness",
+    "tagline": "Train for a Better Life",
+    "address": "Carrera 7 #72-15, Bogotá",
+    "phone": "601-555-1004",
+    "email": "info@urbanfitness.com",
+    "website": "https://example.com",
+    "image": "../../images/house.svg",
+    "membership": 3
+  },
+  {
+    "name": "Fresh Market",
+    "tagline": "Quality Food for Your Family",
+    "address": "Calle 53 #24-10, Bogotá",
+    "phone": "601-555-1005",
+    "email": "info@freshmarket.com",
+    "website": "https://example.com",
+    "image": "../../images/github.svg",
+    "membership": 2
+  },
+  {
+    "name": "Creative Studio",
+    "tagline": "Designing Your Ideas",
+    "address": "Carrera 11 #82-30, Bogotá",
+    "phone": "601-555-1006",
+    "email": "info@creativestudio.com",
+    "website": "https://example.com",
+    "image": "../../images/linkedin.svg",
+    "membership": 1
+  },
+  {
+    "name": "Creative Studio",
+    "tagline": "Designing Your Ideas",
+    "address": "Carrera 11 #82-30, Bogotá",
+    "phone": "601-555-1006",
+    "email": "info@creativestudio.com",
+    "website": "https://example.com",
+    "image": "../../images/linkedin.svg",
+    "membership": 1
+  },
+  {
+    "name": "Creative Studio",
+    "tagline": "Designing Your Ideas",
+    "address": "Carrera 11 #82-30, Bogotá",
+    "phone": "601-555-1006",
+    "email": "info@creativestudio.com",
+    "website": "https://example.com",
+    "image": "../../images/linkedin.svg",
+    "membership": 1
+  },
+  {
+    "name": "Creative Studio",
+    "tagline": "Designing Your Ideas",
+    "address": "Carrera 11 #82-30, Bogotá",
+    "phone": "601-555-1006",
+    "email": "info@creativestudio.com",
+    "website": "https://example.com",
+    "image": "../../images/linkedin.svg",
+    "membership": 1
+  }
+]
