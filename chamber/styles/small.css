@@ -191,100 +191,92 @@ main {
     border-radius: 8px;
 }
 
+.business-card h2,
+.business-card p {
+    margin: 0;
+}
+
+.card-details {
+    gap: 10px;
+}
+
+.card-details p {
+    overflow-wrap: anywhere;
+}
+
 
 
 .grid {
     display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 10px;
+}
 
-    .business-info {
-        text-align: center;
-        border-bottom: 1px solid #b8b8b8;
-        width: 100%;
-        padding-bottom: 15px;
-    }
+.grid .business-info {
+    text-align: center;
+    border-bottom: 1px solid #b8b8b8;
+    width: 100%;
+    padding-bottom: 15px;
+}
 
-    .business-card h2, .business-card p {
-        margin: 0;
-    }
+.grid .card-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 15px;
+}
 
-    .card-info {
-        padding-top: 15px;
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
+.grid .card-info img {
+    width: 110px;
+    height: 110px;
+    max-width: 100%;
+    border-radius: 5px;
+}
 
-    .card-info img {
-        width: 110px;
-        height: 110px;
-        border-radius: 5px;
-    }
+.grid .card-details {
+    display: flex;
+    flex-direction: column;
+}
 
-    .card-details {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .card-details p {
-        margin: 0;
-        display: flex;
-        align-items: center;
-    }
+.grid .card-details p {
+    display: flex;
+    align-items: center;
 }
 
 .list {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
 
-    .business-card {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        width: 100%;
-        min-width: 0;
-        border-radius: 0;
+.list .business-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: center;
+    width: 100%;
+    border-radius: 0;
+}
 
-        &:nth-child(even) {
-            background-color: #ddd;
-        }
-    }
+.list .business-card:nth-child(even) {
+    background-color: #ddd;
+}
 
-    .business-info {
-        min-width: 0;
-    }
+.list .business-info p {
+    display: none;
+}
 
-    .business-info p {
-        display: none;
-    }
+.list .business-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
-    .business-info h2 {
-        font-size: 18px;
-        margin: 0;
-        margin-bottom: 10px;
-    }
+.list .card-info img {
+    display: none;
+}
 
-    .business-card p {
-        margin: 0;
-    }
-
-    .card-info {
-        min-width: 0;
-    }
-
-    .card-info img {
-        display: none;
-    }
-
-    .card-details {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        text-align: start;
-        gap: 10px;
-        min-width: 0;
-    }
+.list .card-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: start;
 }
