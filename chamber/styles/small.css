@@ -356,8 +356,7 @@ h2, h3 {
     font-weight: 800;
     margin: 0;
     font-family: "Google Sans", sans-serif;
-    color: var(--background-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--secondary-color);
 }
 
 .info {
