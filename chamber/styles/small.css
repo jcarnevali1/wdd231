@@ -93,6 +93,9 @@ header span {
 
 h1 {
     margin-left: 10px;
+    background-color: var(--primary-color);
+    padding: 0 15px;
+    border-radius: 15px;
     color: var(--secondary-color);
 }
 
