@@ -1,7 +1,7 @@
 @media only screen and (min-width: 38rem) {
 
     main {
-        max-width: 1500px;
+        width: 95%;
         margin: 0 auto;
     }
 
@@ -59,6 +59,22 @@
 
     .student-info p {
         text-align: start;
+    }
+
+
+
+    .hero-info h2 {
+        font-size: 90px;
+    }
+
+    .info-buttons {
+        flex-direction: row;
+    }
+
+
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
