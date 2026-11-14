@@ -356,10 +356,8 @@ h2, h3 {
     font-weight: 800;
     margin: 0;
     font-family: "Google Sans", sans-serif;
-    background-color: var(--primary-color);
-    padding: 0 15px;
-    border-radius: 15px;
     color: var(--background-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .info {
