@@ -93,10 +93,10 @@ header span {
 
 h1 {
     margin-left: 10px;
-    background-color: var(--primary-color);
-    padding: 0 15px;
-    border-radius: 15px;
-    color: var(--secondary-color);
+}
+
+.hero-title {
+    
 }
 
 
@@ -355,12 +355,15 @@ h2, h3 {
     margin: 0;
 }
 
-.hero-info h1 {
+.hero-title {
     font-size: 60px;
     font-weight: 800;
-    color: var(--background-color);
     margin: 0;
     font-family: "Google Sans", sans-serif;
+    background-color: var(--primary-color);
+    padding: 0 15px;
+    border-radius: 15px;
+    color: var(--background-color);
 }
 
 .info {
