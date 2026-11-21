@@ -26,6 +26,11 @@
     }
 
 
+    .hero-title {
+        font-size: 70px;
+    }
+
+
 
     .grid {
         grid-template-columns: repeat(3, 1fr);
@@ -75,6 +80,31 @@
 
     .cards {
         grid-template-columns: 1fr 1fr;
+    }
+
+    #current-temp {
+        font-size: 40px;
+        padding: 3px 15px;
+    }
+
+    #description {
+        font-size: 18px;
+    }
+
+    .day-temp {
+        font-size: 30px;
+    }
+
+    .day {
+        font-size: 17px;
+    }
+
+    .forecast-day {
+        padding: 12px;
+    }
+
+    .weather-card {
+        grid-template-columns: 125px minmax(0, 1fr);
     }
 
 }
