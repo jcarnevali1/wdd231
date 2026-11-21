@@ -651,8 +651,7 @@ input[type="submit"]:hover {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background-color: rgb(0 0 0 / 5%);
-    text-decoration: none;
+    background-color: rgb(0 0 0 / 10%);
     color: var(--secondary-color);
 }
 
@@ -662,7 +661,7 @@ input[type="submit"]:hover {
 dialog {
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 12px rgb(0 0 0 / 15%);
+    box-shadow: 0 0 12px rgb(0 0 0 / 10%);
 }
 
 .close-modal {
