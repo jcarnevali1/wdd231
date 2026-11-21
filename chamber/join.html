@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join and become a partner of Bogota's Chamber of Commerce.">
+    <meta name="author" content="Jean Franco Carnevali">
+    <title>Chamber of Commerce | Join Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <link rel="icon" href="../favicon.ico">
+
+    <meta property="og:title" content="Chamber of Commerce Join Page">
+    <meta property="og:description" content="Join and become a partner of Bogota's Chamber of Commerce.">
+    <meta property="og:image" content="https://jcarnevali1.github.io/wdd231/images/profile.jpg">
+    <meta property="og:url" content="https://jcarnevali1.github.io/wdd231">
+</head>
+<body>
+    <header>
+        <img src="images/chamber.svg" alt="Chamber of Commerce Icon">
+        <span>Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html" aria-current="page">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main class="form">
+        <h1 class="form-title">Join Us</h1>
+        <p class="description">Join and become a partner of Bogota's Chamber of Commerce.</p>
+        <div class="content">
+            <form method="get" action="thankyou.html">
+                <h2 class="membership-title">Membership Application Form</h2>
+                <label for="first-name">First Name
+                    <input type="text" name="first-name" id="first-name" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+
+                <label for="last-name">Last Name
+                    <input type="text" name="last-name" id="last-name" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label for="organizational-title">Organizational Title
+                    <input type="text" name="organizational-title" id="organizational-title" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}">
+                </label>
+
+                <label for="email">Email
+                    <input type="email" name="email" id="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+                </label>
+
+                <label for="phone">Mobile Phone Number
+                    <input type="tel" name="phone" id="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+
+                <label for="organization-name">Business / Organization's Name
+                    <input type="text" name="organization-name" id="organization-name" title="Enter your organization name" autocomplete="organization" required>
+                </label>
+
+                <label for="membership">Membership Level
+                    <select id="membership" name="membership" required>
+                        <option value="" disabled selected>Select A Membership...</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="feedback">Business / Organization's Description
+                    <span class="optional">(Optional)</span>
+                    <textarea name="feedback" id="feedback" rows="6" title="Describe your organization"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit">
+            </form>
+            <section class="membership-levels">
+                <h2 class="membership-title">Membership Levels</h2>
+                <div class="membership-cards">
+                    <div class="membership-card">
+                        <h3>Non Profit Membership</h3>
+                        <a href="#np-modal" class="membership-button">Learn More</a>
+                    </div>
+                    <div class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <a href="#bronze-modal" class="membership-button">Learn More</a>
+                    </div>
+                    <div class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <a href="#silver-modal" class="membership-button">Learn More</a>
+                    </div>
+                    <div class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <a href="#gold-modal" class="membership-button">Learn More</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="np-modal">
+            <button class="close-modal" aria-label="close">✕</button>
+            <h2>Non Profit Membership Level</h2>
+            <ul>
+                <li>Free membership for nonprofit organizations.</li>
+                <li>Benefits include networking and community events.</li>
+            </ul>
+            <p class="membership-price">COST: Free</p>
+        </dialog>
+        <dialog id="bronze-modal">
+            <button class="close-modal" aria-label="close">✕</button>
+            <h2>Bronze Membership Level</h2>
+            <ul>
+                <li>Basic networking opportunities.</li>
+                <li>Access to community events.</li>
+                <li>Business directory listing.</li>
+            </ul>
+            <p class="membership-price">COST: $10 annual</p>
+        </dialog>
+        <dialog id="silver-modal">
+            <button class="close-modal" aria-label="close">✕</button>
+            <h2>Silver Membership Level</h2>
+            <ul>
+                <li>Discounts on business events.</li>
+                <li>Advanced business training.</li>
+                <li>Business advertising opportunities.</li>
+            </ul>
+            <p class="membership-price">COST: $20 annual</p>
+        </dialog>
+        <dialog id="gold-modal">
+            <button class="close-modal" aria-label="close">✕</button>
+            <h2>Gold Membership Level</h2>
+            <ul>
+                <li>Home Page Spotlight</li>
+                <li>Invitation to special events</li>
+                <li>Free soda at the snack bar</li>
+                <li>Discount tickets to all Bowl Games</li>
+                <li>You'll get a nice plaque with the mayor's stamp on it</li>
+                <li>You get to ride on a float Saint Patty's Day</li>
+            </ul>
+            <p class="membership-price">COST: $30 annual</p>
+        </dialog>
+    </main>
+    <footer>
+        <div class="website-info">
+            <p>Bogotá Colombia Chamber of Commerce</p>
+            <p>Carrera 50 #13-45</p>
+            <p>Puente Aranda, Bogotá, Colombia</p>
+            <p>support@bogotacocc.com</p>
+            <p>(123) 456-7890</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/jcarnevali1/wdd231" target="_blank"><img src="../images/github.svg" alt="GitHub Page" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="../images/linkedin.svg" alt="LinkedIn Page" width="16" height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.svg" alt="Instagram Page" width="16" height="16"></a>
+            <a href="https://x.com/home" target="_blank"><img src="../images/twitter-x.svg" alt="Twitter Page" width="16" height="16"></a>
+        </div>
+        <div class="student-info">
+            <p>WDD 231 Class Project</p>
+            <p>Jean Franco Carnevali</p>
+            <p>© <span id="currentyear"></span> Bogotá Colombia Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
